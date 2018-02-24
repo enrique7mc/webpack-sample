@@ -18,7 +18,8 @@ p {
 	margin-bottom: 48px;
 	max-width: 650px;
 }
+$yellow: #ffcc00;
 
 body {
-	background-color: #ffcc00;
+	background-color: $yellow;
 }
