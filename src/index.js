@@ -1,2 +1,2 @@
-const arr = ['JavaScript', 'Node', 'Webpack'];
+const arr = ['JavaScript', 'Node', 'Webpack', "React"];
 console.log(arr);
