@@ -15,7 +15,5 @@ class Message extends React.Component {
 }
 
 ReactDOM.render(<Message title="Learn webpack"
-	message="Add webpack-dev-server" />,
+	message="Add webpack 4" />,
         document.getElementById('react-container'))
-
-        // consol.log("error");
