@@ -23,3 +23,9 @@ $yellow: #ffcc00;
 body {
 	background-color: $yellow;
 }
+
+#image {
+  background: url('webpack-logo.jpg');
+  height: 277px;
+  width: 400px;
+}

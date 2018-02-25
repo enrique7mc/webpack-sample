@@ -8,11 +8,12 @@ class Message extends React.Component {
 			<div>
 				<h1>{this.props.title}</h1>
 				<p>{this.props.message}</p>
+        <div id="image"></div>
 			</div>
 		)
 	}
 }
 
 ReactDOM.render(<Message title="Learn webpack"
-	message="Add CSS loaders" />,
+	message="Add URL and file loaders" />,
 				document.getElementById('react-container'))
