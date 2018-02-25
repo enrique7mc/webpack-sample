@@ -15,5 +15,7 @@ class Message extends React.Component {
 }
 
 ReactDOM.render(<Message title="Learn webpack"
-	message="Add URL and file loaders" />,
-				document.getElementById('react-container'))
+	message="Add webpack-dev-server" />,
+        document.getElementById('react-container'))
+        
+consol.log('hello')
