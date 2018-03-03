@@ -3,7 +3,8 @@ const path = require("path")
 module.exports = {
 	entry: {
 		vendor: ["react", "react-dom"],
-		app: "./src/index.js"
+    app: "./src/index.js",
+    contact: "./src/contact.js"
 	},
 	output: {
 		filename: "[name].bundle.js",
