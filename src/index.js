@@ -1,5 +1,5 @@
 import React from 'react'
-import {render} from 'react-dom'
+import ReactDOM from 'react-dom'
 import './style.scss'
 
 class Message extends React.Component {
@@ -14,6 +14,6 @@ class Message extends React.Component {
 	}
 }
 
-render(<Message title="Learn webpack"
+ReactDOM.render(<Message title="Learn webpack"
 	message="Add webpack 4" />,
         document.getElementById('react-container'))
