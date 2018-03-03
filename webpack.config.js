@@ -1,14 +1,25 @@
 const path = require("path")
 
 module.exports = {
-	entry: "./src/index.js",
+	entry: {
+		vendor: ["react", "react-dom"],
+		app: "./src/index.js"
+	},
 	output: {
-		filename: "bundle.js",
+		filename: '[name].bundle.js',
 		path: path.join(__dirname, "dist")
   },
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-		port: 8080
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: 'initial',
+          test: 'vendor',
+          name: 'vendor',
+          enforce: true
+        }
+      }
+    }
   },
   module: {
     rules: [{
@@ -39,5 +50,5 @@ module.exports = {
         {loader: "url-loader"}
       ]
     }]
-  }
+  },
 }

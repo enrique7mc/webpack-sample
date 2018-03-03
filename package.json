@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production && serve",
-    "dev": "webpack-dev-server",
-    "watch": "webpack -w"
+    "dev": "webpack --mode development && serve",
+    "watch": "webpack --mode development -w"
   },
   "author": "Enrique",
   "license": "ISC",
