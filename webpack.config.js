@@ -1,4 +1,6 @@
 const path = require("path")
+const BundleAnalyzerPlugin = 
+    require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
@@ -55,6 +57,7 @@ module.exports = {
     }]
   },
   plugins: [
+    new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin(['dist']),
     new UglifyJSPlugin()
   ]
